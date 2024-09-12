@@ -1,53 +1,101 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Menu responsivo</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <nav>
-      <div class="mobile">
-        <div class="header">
-          <div class="logo">A</div>
-          <div class="more"><button>More</button></div>
-        </div>
-        <div class="links">
-          <a href="#">Servicios</a>
-          Somos
-          <a href="#">somos</a>
-          <a href="#">Contact</a>
-          <a href="#">Gatos Gordo</a>
-          <a href="#">XDD</a>
-          <a href="#">Search</a>
-          <a href="#">Sign up</a>
-          <a href="#">Login</a>
-        </div>
-      </div>
-      <div class="desktop">
-        <div class="logo">Logos</div>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosotros - Nuestra Empresa</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .header {
+            background-color: #333;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: flex-end;
+        }
+        .header button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin-left: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .header button:hover {
+            background-color: #0056b3;
+        }
+        .nosotros {
+            background-color: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+        .nosotros h2 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .nosotros p {
+            color: #666;
+            line-height: 1.6;
+        }
+        .nosotros img {
+            width: 50%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        .nosotros .imagen-equipo, .nosotros .imagen-mision {
+            width: 48%;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+        .nosotros .imagen-equipo img, .nosotros .imagen-mision img {
+            width: 50%;
+            height: auto;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Botones de Navegación -->
+    <div class="header">
+        <button onclick="location.href='sobre.html'">Sobre</button>
+        <button onclick="location.href='contacto.html'">Contacto</button>
+    </div>
 
-        <div class="primary">
-          <a href="#">Servicios</a>
-          <a href="#">Ya veo</a>
-          <a href="#">Contact</a>
-        </div>
+    <div class="container">
+        <section class="nosotros">
+            <h2>Inicio</h2>
+            <p>
+                Bienvenido a <strong>XD</strong>, donde nos dedicamos a proporcionar soluciones innovadoras en el campo de la tecnología. Desde nuestra fundación en 2010, hemos crecido para convertirnos en un líder del sector, ofreciendo productos y servicios de alta calidad a clientes de todo el mundo.
+            </p>
 
-        <div class="secondary full">
-          <a href="#">Search</a>
-          <a href="#">Sign up</a>
-          <a href="#">Login</a>
-        </div>
-        <div class="secondary mini">
-          <a href="#">More</a>
-          <div class="submenu">
-            <a href="#">Sign up</a>
-            <a href="#">Login</a>
-          </div>
-        </div>
-      </div>
-    </nav>
-  </body>
+            <p>
+                Nuestro equipo está compuesto por profesionales apasionados y dedicados que trabajan incansablemente para asegurar que cada proyecto que emprendemos no solo cumpla, sino que supere las expectativas de nuestros clientes. Creemos en la excelencia, la integridad y la innovación como los pilares fundamentales de nuestra empresa.
+            </p>
+            <p>
+                Misión: Nuestra misión es ayudar a nuestros clientes a alcanzar el éxito mediante la entrega de soluciones tecnológicas personalizadas que impulsen su crecimiento y eficiencia.
+            </p>
+            <p>
+                Visión: Ser reconocidos como la empresa líder en innovación tecnológica a nivel mundial, comprometida con la mejora continua y el desarrollo sostenible.
+            </p>
+            <p>
+                Únete a nosotros en este viaje hacia un futuro más brillante, donde la tecnología y la creatividad se unen para crear soluciones impactantes.
+            </p>
+        </section>
+    </div>
+</body>
 </html>
